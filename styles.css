@@ -172,10 +172,12 @@ h1 em, h2 em { color: var(--blue-bright); font-style: normal; font-weight: 300; 
 .release-specs dt { margin-bottom: 6px; color: #617589; font-size: .62rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .release-specs dd { margin: 0; color: #d8e2e9; font-size: .83rem; font-weight: 700; white-space: nowrap; }
 .status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 12px rgba(130, 206, 255, .8); vertical-align: 1px; }
-.release-button { min-height: 58px; padding: 10px 18px; color: #8092a2; background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 4px; text-align: left; cursor: not-allowed; }
+.release-button { display: flex; min-height: 58px; padding: 10px 18px; flex-direction: column; justify-content: center; color: #d9ecf8; background: linear-gradient(135deg, rgba(34, 145, 215, .24), rgba(17, 85, 132, .18)); border: 1px solid rgba(130, 206, 255, .42); border-radius: 4px; text-align: left; text-decoration: none; cursor: pointer; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background .2s ease; }
 .release-button span, .release-button strong { display: block; }
-.release-button span { margin-bottom: 2px; color: #586d80; font-size: .58rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
-.release-button strong { color: #b5c4cf; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.release-button span { margin-bottom: 2px; color: #91cfee; font-size: .58rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.release-button strong { color: #edf8ff; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.release-button:hover { transform: translateY(-1px); border-color: rgba(151, 219, 255, .78); background: linear-gradient(135deg, rgba(39, 160, 235, .32), rgba(17, 91, 143, .24)); box-shadow: 0 10px 28px rgba(24, 126, 190, .18); }
+.release-button:focus-visible { outline: 2px solid #8bd2fb; outline-offset: 3px; }
 
 .site-footer { padding: 72px 0 24px; border-top: 1px solid var(--line); background: #040609; }
 .footer-top { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 65px; }
